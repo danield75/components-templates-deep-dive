@@ -2,8 +2,8 @@
   <ul>
     @for (ticket of tickets; track ticket.id) {
     <li>
-      <app-ticket />
-      {{ $count }}
+      <app-ticket [data]="ticket" />
+      <!-- {{ $count }} -->
     </li>
     } @empty {
     <p>No tickets available</p>
